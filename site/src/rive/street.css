@@ -1,0 +1,161 @@
+/* Rive Drive · version Street banlieue (jaune électrique, noir, typo condensée, stickers) */
+:root {
+  --bg: #e7e6e1;
+  --surface: #ffffff;
+  --surface-2: #f1f0ec;
+  --ink: #0d0d0d;
+  --ink-dim: #3d3d3a;
+  --ink-faint: #5f5e59;
+  --line: rgba(13, 13, 13, 0.14);
+  --line-strong: #0d0d0d;
+  --accent: #0d0d0d;
+  --accent-ink: #ffd60a;
+  --accent-soft: rgba(255, 214, 10, 0.35);
+  --kicker: #0d0d0d;
+  --focus: #ff6b1a;
+  --danger: #c6280f;
+  --yellow: #ffd60a;
+  --orange: #ff6b1a;
+
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-display: 'Anton', Impact, sans-serif;
+  --font-brand: 'Anton', Impact, sans-serif;
+  --display-weight: 400;
+  --display-case: uppercase;
+  --brand-track: 0.02em;
+  --brand-accent: #0d0d0d;
+  --h1-size: clamp(3rem, 7.4vw, 6.2rem);
+  --h1-line: 0.95;
+  --h1-track: 0;
+  --h2-size: clamp(2.2rem, 4.6vw, 3.6rem);
+  --h2-track: 0.01em;
+  --h3-size: 1.6rem;
+
+  --btn-bg: #0d0d0d;
+  --btn-ink: #ffd60a;
+  --btn-bg-hover: #ffd60a;
+  --btn-ink-hover: #0d0d0d;
+  --btn-border: 3px solid #0d0d0d;
+  --btn-radius: 4px;
+  --btn-font: 'Inter', system-ui, sans-serif;
+  --btn-size: 0.88rem;
+  --btn-weight: 800;
+  --btn-track: 0.04em;
+  --btn-case: uppercase;
+  --ghost-border: 3px solid #0d0d0d;
+  --arrow-radius: 4px;
+  --chip-radius: 3px;
+  --input-radius: 4px;
+
+  --top-solid: #0d0d0d;
+  --top-shadow: none;
+  --hero-bg: #cfcecb;
+  --stage-fill: #bbbbba;
+  --stage-offset: 230px;
+  --stage-radius: 6px;
+  --panel-bg: #0d0d0d;
+  --panel-ink: #ffffff;
+  --panel-border: 3px solid #ffd60a;
+  --panel-radius: 8px;
+  --panel-shadow: 8px 8px 0 #ffd60a;
+  --card-bg: #ffffff;
+  --card-border: 3px solid #0d0d0d;
+  --card-radius: 6px;
+  --band-bg: #0d0d0d;
+  --band-ink: #ffffff;
+  --band-dim: rgba(255, 255, 255, 0.78);
+  --bullet: #ffd60a;
+  --bullet-radius: 2px;
+  --option-bg: #ffd60a;
+  --option-ink: #0d0d0d;
+  --option-bg-2: #0d0d0d;
+  --option-ink-2: #ffffff;
+  --option-num: currentColor;
+  --dialog-bg: #ffffff;
+  --dialog-radius: 8px;
+  --foot-bg: #0d0d0d;
+  --foot-ink: #ffffff;
+}
+
+/* Logo en sticker jaune incliné */
+.rd-street .rd-brand {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  background: var(--yellow);
+  color: #0d0d0d;
+  transform: rotate(-3deg);
+  font-size: 1.4rem;
+}
+.rd-street .rd-brand span { color: #0d0d0d; }
+.rd-street .rd-top.is-solid .rd-links a { color: rgba(255, 255, 255, 0.8); }
+.rd-street .rd-top.is-solid .rd-links a:hover { color: var(--yellow); }
+.rd-street .rd-links a { font-weight: 700; text-transform: uppercase; font-size: 0.82rem; letter-spacing: 0.04em; }
+.rd-street .rd-btn-top { background: var(--yellow); color: #0d0d0d; border-color: var(--yellow); }
+.rd-street .rd-btn-top:hover { background: #fff; border-color: #fff; }
+
+/* Kickers en étiquettes inclinées */
+.rd-street .rd-kicker {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: var(--yellow);
+  color: #0d0d0d;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  transform: rotate(-2deg);
+}
+.rd-street .rd-band .rd-tag { background: var(--orange); color: #0d0d0d; justify-self: start; font-family: var(--font-display); font-size: 1.1rem; font-weight: 400; }
+
+/* Titre du hero : surlignage jaune sous la 2e ligne */
+.rd-street .rd-title { position: relative; }
+.rd-street .rd-title br + * { background: none; }
+.rd-street .rd-sub { color: var(--ink); font-weight: 500; }
+
+.rd-street .rd-q span { color: var(--yellow); }
+.rd-street .rd-q input { color-scheme: dark; }
+.rd-street .rd-q { background: #1c1c1c; border-radius: 4px; }
+.rd-street .rd-btn-search { background: var(--yellow); color: #0d0d0d; border-color: var(--yellow); }
+.rd-street .rd-btn-search:hover { background: #fff; border-color: #fff; }
+
+/* Cartes : prix en sticker orange */
+.rd-street .rd-card { box-shadow: 6px 6px 0 #0d0d0d; }
+.rd-street .rd-card-price {
+  position: absolute;
+  top: -1.6rem;
+  right: 1rem;
+  padding: 0.25rem 0.6rem;
+  background: var(--orange);
+  color: #0d0d0d;
+  font-weight: 800;
+  transform: rotate(-4deg);
+  box-shadow: 3px 3px 0 #0d0d0d;
+}
+.rd-street .rd-card-price strong { font-family: var(--font-display); font-weight: 400; font-size: 1.5rem; color: #0d0d0d; }
+.rd-street .rd-card-body { padding-top: 1.4rem; }
+.rd-street .rd-specs li { background: #0d0d0d; color: #fff; }
+.rd-street .rd-btn-card:hover { box-shadow: 4px 4px 0 #0d0d0d; }
+
+.rd-street .rd-band { border-top: 6px solid var(--yellow); }
+.rd-street .rd-band-text h2 { color: var(--yellow); }
+
+.rd-street .rd-option { box-shadow: 6px 6px 0 #0d0d0d; }
+.rd-street .rd-option:nth-child(even) { box-shadow: 6px 6px 0 var(--yellow); }
+.rd-street .rd-option-num { font-size: 2.4rem; }
+.rd-street .rd-option h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 0.01em; }
+
+.rd-street .rd-faq-item { border-width: 3px; }
+.rd-street .rd-faq-item summary { text-transform: uppercase; font-weight: 800; font-size: 0.92rem; }
+
+.rd-street .rd-foot { border-top: 8px solid var(--yellow); }
+.rd-street .rd-foot .rd-brand { font-size: 1.6rem; }
+
+.rd-street .rd-dialog { box-shadow: 10px 10px 0 var(--yellow), 0 30px 80px rgba(0, 0, 0, 0.3); border-color: #0d0d0d; }
+.rd-street .rd-steps li.is-done,
+.rd-street .rd-steps li[aria-current] { border-color: var(--yellow); }
+.rd-street .rd-done-icon { background: var(--yellow); color: #0d0d0d; }
+.rd-street .rd-badge { background: var(--orange); color: #0d0d0d; }
+.rd-street .rd-car[aria-checked='true'] { border-color: #0d0d0d; box-shadow: 4px 4px 0 var(--yellow); }
+.rd-street .rd-opt:has(input:checked) { border-color: #0d0d0d; background: rgba(255, 214, 10, 0.35); }
+
+@media (max-width: 600px) {
+  .rd-street .rd-card { box-shadow: 4px 4px 0 #0d0d0d; }
+}

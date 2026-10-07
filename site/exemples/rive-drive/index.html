@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr" class="rd-premium">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Rive Drive · Location de voitures à Paris & en banlieue</title>
+    <meta name="description" content="Location de voitures récentes à Paris et en proche banlieue : 5 agences, prix tout compris, réservation en ligne en 2 minutes." />
+    <meta name="theme-color" content="#f4f2ed" />
+    <meta property="og:title" content="Rive Drive · Location de voitures à Paris & en banlieue" />
+    <meta property="og:description" content="Location de voitures récentes à Paris et en proche banlieue : 5 agences, prix tout compris, réservation en ligne en 2 minutes." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="%VITE_SITE_URL%/exemples/rive-drive/og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='16' text-anchor='middle' fill='%23f4f2ed'%3ERD%3C/text%3E%3C/svg%3E" />
+    <script type="module" src="/src/rive/premium.ts"></script>
+  </head>
+  <body>
+    <a class="rd-skip" href="#flotte">Aller au contenu</a>
+    <header class="rd-top">
+      <nav class="rd-top-inner" aria-label="Navigation principale">
+        <a class="rd-brand" href="#">Rive<span>Drive</span></a>
+        <div class="rd-links">
+          <a href="#flotte">Véhicules</a><a href="#villes">Paris & banlieue</a><a href="#options">Options</a><a href="#faq">FAQ</a>
+        </div>
+        <button class="rd-btn rd-btn-top js-book" type="button">Réserver</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="rd-hero">
+        <p class="rd-kicker">Location de voitures · Paris & banlieue</p>
+        <h1 class="rd-title">Paris & banlieue,<br /> à votre rythme.</h1>
+        <p class="rd-sub">Des voitures récentes, un prix clair et tout compris. Réservez en deux minutes, récupérez en agence.</p>
+        <div class="rd-stage">
+          <img class="rd-poster" src="/exemples/rive-drive/hero.jpg" alt="SUV compact Rive Drive en exposition" width="1344" height="752" fetchpriority="high" />
+        </div>
+        <form class="rd-quick" aria-label="Recherche rapide">
+          <label class="rd-q"><span>Agence</span><select name="q-agency"></select></label>
+          <label class="rd-q"><span>Départ</span><input type="date" name="q-from" required /></label>
+          <label class="rd-q"><span>Retour</span><input type="date" name="q-to" required /></label>
+          <label class="rd-q"><span>Véhicule</span><select name="q-category"></select></label>
+          <button class="rd-btn rd-btn-search" type="submit">Voir les prix <span aria-hidden="true">→</span></button>
+        </form>
+      </section>
+
+      <section id="flotte" class="rd-section rd-reveal">
+        <div class="rd-head">
+          <div><p class="rd-kicker">Notre flotte</p><h2>Des véhicules pour tous vos trajets</h2><p class="rd-lead">Du petit trajet en ville au déménagement du week-end.</p></div>
+          <div class="rd-arrows">
+            <button class="rd-arrow rd-fleet-prev" type="button" aria-label="Véhicules précédents">‹</button>
+            <button class="rd-arrow rd-fleet-next" type="button" aria-label="Véhicules suivants">›</button>
+          </div>
+        </div>
+        <ul class="rd-fleet" aria-label="Catégories de véhicules"></ul>
+      </section>
+
+      <section id="villes" class="rd-bands" aria-label="Paris et banlieue">
+        <article class="rd-band rd-reveal">
+          <img src="/exemples/rive-drive/paris.webp" alt="Boulevard parisien et tour Eiffel" width="1344" height="752" loading="lazy" />
+          <div class="rd-band-text"><p class="rd-kicker rd-tag">Paris</p><h2>La ville, sans contrainte.</h2><p>Une citadine pour un rendez-vous, une berline pour un dîner : récupérez votre voiture à deux pas du métro et circulez à votre rythme.</p><ul><li>Agence Paris 11e à 3 min de Voltaire</li><li>Véhicules Crit’Air 1 pour les zones à faibles émissions</li><li>Restitution possible dans une autre agence</li></ul></div>
+        </article>
+        <article class="rd-band rd-band-flip rd-reveal">
+          <img src="/exemples/rive-drive/banlieue.webp" alt="Avenue de proche banlieue" width="1344" height="752" loading="lazy" />
+          <div class="rd-band-text"><p class="rd-kicker rd-tag">Banlieue</p><h2>Plus loin, tout près.</h2><p>Saint-Denis, Créteil, La Défense, Orly : nos agences de proche banlieue ouvrent tôt et ferment tard, pour vos trajets du quotidien comme pour les départs en vacances.</p><ul><li>Ouvert dès 6h à Orly, jusqu’à 22h à La Défense</li><li>Parking gratuit devant chaque agence</li><li>Utilitaires disponibles le dimanche</li></ul></div>
+        </article>
+      </section>
+
+      <section id="options" class="rd-section rd-reveal">
+        <div class="rd-head"><div><p class="rd-kicker">Options & assurances</p><h2>Roulez l’esprit tranquille</h2><p class="rd-lead">Responsabilité civile et assistance 24/7 sont toujours incluses. Ajoutez ce dont vous avez besoin, au jour près.</p></div></div>
+        <ul class="rd-options"></ul>
+        <p class="rd-center"><button class="rd-btn js-book" type="button">Composer ma location <span aria-hidden="true">→</span></button></p>
+      </section>
+
+      <section id="faq" class="rd-section rd-faq rd-reveal">
+        <div class="rd-head"><div><p class="rd-kicker">Questions fréquentes</p><h2>Avant de partir</h2></div></div>
+        <div class="rd-faq-list"><details class="rd-faq-item"><summary>Quel âge faut-il avoir pour louer ?</summary><p>21 ans minimum et 2 ans de permis. Pour la berline et la familiale, 23 ans et 3 ans de permis.</p></details><details class="rd-faq-item"><summary>Quels documents apporter ?</summary><p>Votre permis de conduire, une pièce d’identité et une carte bancaire à votre nom pour la caution.</p></details><details class="rd-faq-item"><summary>Quel est le montant de la caution ?</summary><p>800 € bloqués sur votre carte (pas débités), 300 € avec l’option franchise réduite.</p></details><details class="rd-faq-item"><summary>Et le carburant ?</summary><p>Le véhicule est remis avec le plein et doit être rendu avec le plein. Sinon, le carburant manquant est facturé au prix de la pompe.</p></details><details class="rd-faq-item"><summary>Puis-je annuler ?</summary><p>Oui, gratuitement jusqu’à 24 h avant le départ.</p></details></div>
+      </section>
+    </main>
+
+    <footer class="rd-foot">
+      <div class="rd-foot-inner">
+        <div><a class="rd-brand" href="#">Rive<span>Drive</span></a><p>Location de voitures à Paris & en banlieue, sans surprise.</p><p><a href="tel:+33123456789">01 23 45 67 89</a></p></div>
+        <div><p class="rd-foot-title">Nos agences</p><ul class="rd-agencies"></ul></div>
+      </div>
+      <p class="rd-foot-note">© <span class="rd-year">2026</span> Rive Drive · Site de démonstration, entreprise fictive.</p>
+    </footer>
+  </body>
+</html>

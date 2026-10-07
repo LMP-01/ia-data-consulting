@@ -10,7 +10,9 @@ export default defineConfig({
       input: {
         main: 'index.html',
         hamed: 'exemples/hamed-coiffeur/index.html',
-        nonna: 'exemples/nonna-rosa/index.html'
+        nonna: 'exemples/nonna-rosa/index.html',
+        rive: 'exemples/rive-drive/index.html',
+        riveStreet: 'exemples/rive-drive-street/index.html'
       }
     }
   }
