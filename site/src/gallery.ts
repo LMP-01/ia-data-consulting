@@ -20,8 +20,7 @@ const GALLERIES: Record<string, Slide[]> = {
   seissix: [
     { src: 'assets/seissix-01.png', capKey: 'gal.seissix.1' },
     { src: 'assets/seissix-02.png', capKey: 'gal.seissix.2' }
-  ],
-  guide: [{ src: 'assets/guide-01.png', capKey: 'gal.guide.1' }]
+  ]
 };
 
 export function initGalleries(): void {
