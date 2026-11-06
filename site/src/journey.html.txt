@@ -1,5 +1,6 @@
 <!-- Section « Parcours » retirée temporairement. Pour la remettre : coller ce bloc avant <!-- TOOLBOX --> dans index.html,
-     rajouter le lien nav + .nav-journey, et rappeler initJourney() dans main.ts. -->
+     rajouter le lien nav + .nav-journey, rappeler initJourney() dans main.ts, et remettre les clés
+     de src/journey-locales.json dans src/locales/fr.json et en.json (retirées du site publié). -->
       <!-- PARCOURS : roadmap cinématique -->
       <section id="parcours" class="section journey">
         <p class="eyebrow center" data-i18n="journey.kicker">PARCOURS</p>
